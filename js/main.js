@@ -61,6 +61,7 @@
       sound.setAttribute('aria-label', on ? 'Sound off' : 'Sound on');
       sound.setAttribute('title', on ? 'Sound off' : 'Sound on');
     });
+    if (window.innerWidth <= 760) { sound.setAttribute('aria-label', 'Play film'); sound.setAttribute('title', 'Play film'); }
   }
 
   /* Phone menu */
