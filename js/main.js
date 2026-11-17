@@ -120,3 +120,5 @@
   toggler('more-btn', ['more-list']);
   toggler('mission-btn', ['mission-text', 'about-photo-2']);
 })();
+
+document.querySelectorAll('.strip-film').forEach(v=>{v.addEventListener('play',()=>v.classList.add('on'));v.addEventListener('pause',()=>v.classList.remove('on'))});

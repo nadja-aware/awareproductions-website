@@ -147,7 +147,9 @@ button.pill{cursor:pointer;transition:background .35s ease,color .35s ease,borde
 .strip{display:flex;gap:8px;overflow-x:auto;height:clamp(220px,23vw,340px);padding-bottom:8px;scrollbar-width:thin;scrollbar-color:var(--grey2) transparent}
 .strip img{height:100%;width:auto;object-fit:cover;flex:none;filter:grayscale(1) contrast(1.04);transition:filter .7s ease}
 .strip img:hover{filter:none}
-@media (hover:none){.strip img{filter:none}}
+.strip-film{height:100%;width:auto;aspect-ratio:16/9;flex:none;background:#000;filter:grayscale(1) contrast(1.04);transition:filter .7s ease}
+.strip-film:hover,.strip-film.on{filter:none}
+@media (hover:none){.strip img,.strip-film{filter:none}}
 .more-wrap{display:flex;justify-content:center;border-top:1px solid var(--grey2);padding-top:28px}
 .toggle{cursor:pointer;display:inline-flex;align-items:center;gap:10px;padding:11px 20px;border-radius:999px;background:transparent;border:1px solid var(--blue);font-size:14px}
 .chev{transition:transform .4s ease}
